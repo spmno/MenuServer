@@ -1,0 +1,12 @@
+zh:
+  title: "菜单服务器"
+  name: "名称"
+  description: "描述"
+  image: "图片"
+  price: "价格"
+  kind: "种类"
+  new_dish: "新菜品"
+  show: "显示"
+  edit: "编辑"
+  delete: "删除"
+  list_dishes: "菜品列表"

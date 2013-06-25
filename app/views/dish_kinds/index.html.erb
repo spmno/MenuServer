@@ -1,0 +1,23 @@
+<h1>Listing dish_kinds</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dish_kinds.each do |dish_kind| %>
+  <tr>
+    <td><%= dish_kind.name %></td>
+    <td><%= link_to 'Show', dish_kind %></td>
+    <td><%= link_to 'Edit', edit_dish_kind_path(dish_kind) %></td>
+    <td><%= link_to 'Destroy', dish_kind, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dish kind', new_dish_kind_path %>
