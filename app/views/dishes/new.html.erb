@@ -1,5 +1,5 @@
-<h1>New dish</h1>
+<h1><%= I18n.t"new_dish" %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', dishes_path %>
+<%= link_to (I18n.t"back"), dishes_path %>

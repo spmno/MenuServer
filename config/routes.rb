@@ -1,7 +1,27 @@
 MenuServer::Application.routes.draw do
+  resources :display_items
+
+  resources :pages do
+    collection do
+      post 'add_display_items'
+      post 'save_select_dish'
+    end
+  end
+
+
+  resources :order_items
+
+  resources :members
+
+  resources :orders
+
   resources :dish_kinds
 
-  resources :dishes
+  resources :dishes do
+    collection do
+      get 'select_dishes'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

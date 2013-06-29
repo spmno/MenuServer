@@ -1,0 +1,51 @@
+var labelX = "<label>x:</label>";
+var inputX = "<input name='inputX'/>";
+var labelY = "<label>y:</label>";
+var inputY = "<input name='inputY'>";
+var labelWidth = "<label>width:</label>";
+var inputWidth = "<input name='inputWidth'>";
+var labelHeight = "<label>height:</label>";
+var inputHeight = "<input name='inputHeight'>";
+var labelDish = "<label>dish:</label>";
+var inputDish = "<input name='inputDish' id='iii'>";
+var selectDishButton = "<input name='selectDishButton' type='button' value='选择菜品'>"
+var br = "<br/>"
+
+$(".display_items>.content").append(labelX,
+        inputX,
+        labelY,
+        inputY,
+        labelWidth,
+        inputWidth,
+        labelHeight,
+        inputHeight,
+        labelDish,
+        inputDish,
+        selectDishButton,
+        br);
+$("input[name='selectDishButton']").click(function(){
+            $("#dialog").load("/dishes/select_dishes table");
+            $("#dialog").dialog({
+                title: "选择菜品",
+                width: 800,
+                height: 600,
+                //modal: true,
+                overlay:{opacity: 0.7, background: "#FF8899" },
+                open: function() {
+
+                    //$(this).closest(".ui-dialog-content").dialog('close');
+                    /*
+                    $("table tr").click(function() {
+                        alert("hello");
+                        var row = $(this).find('tr:first').test();
+                        $(input[name='inputDish']).val(row);
+                        $(this).closest('.ui-dialog-content').dialog('close');
+
+                        alert("hello");
+                    });
+                    */
+                    //$("table tr").append("hellooooo");
+                }
+            });
+        }
+);

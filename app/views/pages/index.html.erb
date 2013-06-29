@@ -1,0 +1,25 @@
+<h1><%= I18n.t("list_pages") %></h1>
+
+<table>
+  <tr>
+    <th><%= I18n.t("name") %></th>
+    <th><%= I18n.t("image") %></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pages.each do |page| %>
+  <tr>
+    <td><%= page.name %></td>
+    <td><%= page.photo %></td>
+    <td><%= link_to (I18n.t("show")), page %></td>
+    <td><%= link_to (I18n.t("edit")), edit_page_path(page) %></td>
+    <td><%= link_to (I18n.t("delete")), page, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to (I18n.t("new_page")), new_page_path %>

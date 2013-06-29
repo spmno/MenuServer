@@ -80,4 +80,13 @@ class DishesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def select_dishes
+    @dishes = Dish.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @dishes }
+    end
+  end
 end

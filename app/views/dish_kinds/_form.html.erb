@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, (I18n.t"name") %><br />
     <%= f.text_field :name %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit(I18n.t"create_dish_kind") %>
   </div>
 <% end %>

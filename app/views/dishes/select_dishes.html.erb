@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th><%= I18n.t"id" %></th>
+    <th><%= I18n.t"name" %></th>
+    <th><%= I18n.t"description" %></th>
+    <th><%= I18n.t"image" %></th>
+    <th><%= I18n.t"price" %></th>
+    <th><%= I18n.t"kind" %></th>
+    <th><%= I18n.t"select_dish" %></th>
+  </tr>
+
+  <% @dishes.each do |dish| %>
+      <tr>
+        <td><%= dish.id %></td>
+        <td><%= dish.name %></td>
+        <td><%= dish.description %></td>
+        <td><%= dish.photo %></td>
+        <td><%= dish.price %></td>
+        <td><%= dish.dish_kind.name %></td>
+        <td><%= link_to ("selectId"),  options = {controller:"pages", action:"save_select_dish"}, html_options = {method: :post, remote:true} %></td>
+      </tr>
+  <% end %>
+</table>

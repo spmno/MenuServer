@@ -1,30 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b><%=  I18n.t("name") %></b>
   <%= @dish.name %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b><%= I18n.t("description") %></b>
   <%= @dish.description %>
 </p>
 
 <p>
-  <b>Image url:</b>
-  <%= @dish.image_url %>
+  <b><%= I18n.t("image") %></b>
+  <%= image_tag @dish.photo %>
 </p>
 
 <p>
-  <b>Price:</b>
+  <b><%= I18n.t("price") %></b>
   <%= @dish.price %>
 </p>
 
 <p>
-  <b>Kind:</b>
-  <%= @dish.kind_id %>
+  <b><%= I18n.t("dish_kind") %></b>
+  <%= @dish.dish_kind.name %>
 </p>
 
 
-<%= link_to 'Edit', edit_dish_path(@dish) %> |
-<%= link_to 'Back', dishes_path %>
+<%= link_to (I18n.t"edit"), edit_dish_path(@dish) %> |
+<%= link_to (I18n.t"back"), dishes_path %>

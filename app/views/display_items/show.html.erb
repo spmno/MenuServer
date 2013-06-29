@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>X:</b>
+  <%= @display_item.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%= @display_item.y %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @display_item.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @display_item.height %>
+</p>
+
+<p>
+  <b>Dish:</b>
+  <%= @display_item.dish_id %>
+</p>
+
+<p>
+  <b>Page:</b>
+  <%= @display_item.page_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_display_item_path(@display_item) %> |
+<%= link_to 'Back', display_items_path %>

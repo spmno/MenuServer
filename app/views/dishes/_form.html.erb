@@ -12,26 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, (I18n.t"name") %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label :description, (I18n.t"description") %><br />
     <%= f.text_area :description %>
   </div>
   <div class="field">
+    <!--
     <%= f.label :image_url %><br />
     <%= f.text_field :image_url %>
+    -->
+    <lable><%= I18n.t"image" %></lable>
+    <%= f.file_field :photo %>
   </div>
   <div class="field">
-    <%= f.label :price %><br />
+    <%= f.label :price, (I18n.t"price") %><br />
     <%= f.text_field :price %>
   </div>
   <div class="field">
-    <%= f.label :kind_id %><br />
+    <!--
+    <%= f.label :kind_id, (I18n.t"kind") %><br />
     <%= f.number_field :kind_id %>
+    -->
+    <%= f.label :kind_id, (I18n.t"kind") %><br />
+    <%= f.select :kind_id, options_from_collection_for_select(DishKind.all, 'id', 'name'), {prompt:"选择种类"} %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit(I18n.t"create_dish") %>
   </div>
 <% end %>

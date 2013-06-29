@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130624094039) do
+ActiveRecord::Schema.define(:version => 20130626081636) do
 
   create_table "dish_kinds", :force => true do |t|
     t.string   "name"
@@ -24,9 +24,55 @@ ActiveRecord::Schema.define(:version => 20130624094039) do
     t.text     "description"
     t.string   "image_url"
     t.decimal  "price"
-    t.integer  "kind_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "dish_kind_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "photo"
+  end
+
+  create_table "display_items", :force => true do |t|
+    t.integer  "x"
+    t.integer  "y"
+    t.integer  "width"
+    t.integer  "height"
+    t.integer  "dish_id"
+    t.integer  "page_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "members", :force => true do |t|
+    t.string   "name"
+    t.decimal  "balance"
+    t.integer  "level_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "order_items", :force => true do |t|
+    t.integer  "order_id"
+    t.integer  "dish_id"
+    t.integer  "discount"
+    t.integer  "count"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "orders", :force => true do |t|
+    t.decimal  "total_price"
+    t.datetime "order_time"
+    t.datetime "checkout_time"
+    t.integer  "member_id"
+    t.integer  "table_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "pages", :force => true do |t|
+    t.string   "name"
+    t.string   "photo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
