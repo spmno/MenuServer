@@ -17,7 +17,7 @@
         <td><%= dish.photo %></td>
         <td><%= dish.price %></td>
         <td><%= dish.dish_kind.name %></td>
-        <td><%= link_to ("selectId"),  options = {controller:"pages", action:"save_select_dish"}, html_options = {method: :post, remote:true} %></td>
+        <td><%= link_to ("selectId"),  options = {controller:"display_items", action:"save_select_dish", id:dish.id}, html_options = {method: :post, remote:true} %></td>
       </tr>
   <% end %>
 </table>

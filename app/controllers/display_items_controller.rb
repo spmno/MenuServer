@@ -1,4 +1,4 @@
-class DisplayItemsController < ApplicationController
+  class DisplayItemsController < ApplicationController
   # GET /display_items
   # GET /display_items.json
   def index
@@ -24,7 +24,9 @@ class DisplayItemsController < ApplicationController
   # GET /display_items/new
   # GET /display_items/new.json
   def new
+    @page_id = params[:id]
     @display_item = DisplayItem.new
+    @display_item.page_id = @page_id
 
     respond_to do |format|
       format.html # new.html.erb
@@ -78,6 +80,17 @@ class DisplayItemsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to display_items_url }
       format.json { head :no_content }
+    end
+  end
+  def save_select_dish
+    @dish_id = params[:id]
+    logger.debug("add save_select_dish")
+    if request.xhr?
+      #insert display item control
+
+    end
+    respond_to do |format|
+      format.js
     end
   end
 end

@@ -1,5 +1,9 @@
 MenuServer::Application.routes.draw do
-  resources :display_items
+  resources :display_items do
+    collection do
+      post 'save_select_dish'
+    end
+  end
 
   resources :pages do
     collection do

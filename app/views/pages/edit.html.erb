@@ -1,6 +1,48 @@
-<h1>Editing page</h1>
+<h1><%= I18n.t"edit_page" %></h1>
 
-<%= render 'form' %>
+<%= form_for(@page) do |f| %>
+    <% if @page.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
 
-<%= link_to 'Show', @page %> |
-<%= link_to 'Back', pages_path %>
+          <ul>
+            <% @page.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+    <div class="field">
+      <%= f.label :name, (I18n.t("name")) %><br />
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <!--
+    <%= f.label :photo %><br />
+    <%= f.text_field :photo %>
+    -->
+      <lable><%= I18n.t"image" %></lable>
+      <%= f.text_field :photo %>
+    </div>
+    <!--
+    <div class="display_items">
+      <label>子项</label>
+      <br/>
+      <div class="content">
+
+      </div>
+
+    </div>
+    -->
+    <%= link_to (I18n.t"add_sub_item"), {controller: "display_items", action:"new", id:@page_id} %>
+
+    <div class="actions">
+      <%= f.submit(I18n.t("create_page")) %>
+    </div>
+<% end %>
+
+
+<%= link_to (I18n.t"show"), @page %> |
+<%= link_to (I18n.t"back"), pages_path %>

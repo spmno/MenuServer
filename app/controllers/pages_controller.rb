@@ -34,6 +34,7 @@ class PagesController < ApplicationController
 
   # GET /pages/1/edit
   def edit
+    @page_id = params[:id]
     @page = Page.find(params[:id])
   end
 

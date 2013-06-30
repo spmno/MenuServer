@@ -27,6 +27,7 @@
     <lable><%= I18n.t"image" %></lable>
     <%= f.file_field :photo %>
   </div>
+    <!--
     <div class="display_items">
       <label>子项</label>
       <br/>
@@ -35,7 +36,9 @@
       </div>
 
     </div>
+
     <%= link_to (I18n.t"add_sub_item"), options = {action:"add_display_items"}, html_options = {method: :post, remote:true} %>
+    -->
   <div class="actions">
     <%= f.submit(I18n.t("create_page")) %>
   </div>
