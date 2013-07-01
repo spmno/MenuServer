@@ -9,6 +9,7 @@ MenuServer::Application.routes.draw do
     collection do
       post 'add_display_items'
       post 'save_select_dish'
+      get 'update_app'
     end
   end
 

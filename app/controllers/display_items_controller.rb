@@ -46,8 +46,9 @@
 
     respond_to do |format|
       if @display_item.save
-        format.html { redirect_to @display_item, notice: 'Display item was successfully created.' }
-        format.json { render json: @display_item, status: :created, location: @display_item }
+        #format.html { redirect_to @display_item, notice: 'Display item was successfully created.' }
+        #format.json { render json: @display_item, status: :created, location: @display_item }
+        format.html { redirect_to edit_page_path(@display_item.page_id)}
       else
         format.html { render action: "new" }
         format.json { render json: @display_item.errors, status: :unprocessable_entity }

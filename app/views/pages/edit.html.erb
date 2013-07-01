@@ -1,4 +1,4 @@
-<h1><%= I18n.t"edit_page" %></h1>
+<h1 xmlns="http://www.w3.org/1999/html"><%= I18n.t"edit_page" %></h1>
 
 <%= form_for(@page) do |f| %>
     <% if @page.errors.any? %>
@@ -26,16 +26,16 @@
       <lable><%= I18n.t"image" %></lable>
       <%= f.text_field :photo %>
     </div>
-    <!--
+
     <div class="display_items">
       <label>子项</label>
       <br/>
-      <div class="content">
-
-      </div>
-
+      <% @display_items.each do |item| %>
+        <%= I18n.t"dish_id" %>:<%= item.dish_id %> <%= I18n.t"page_id" %>:<%= item.page_id %>
+        </br>
+      <% end %>
     </div>
-    -->
+
     <%= link_to (I18n.t"add_sub_item"), {controller: "display_items", action:"new", id:@page_id} %>
 
     <div class="actions">

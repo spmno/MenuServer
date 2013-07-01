@@ -22,22 +22,22 @@
     <%= f.number_field :y %>
   </div>
   <div class="field">
-    <%= f.label :width %><br />
+    <%= f.label :width, (I18n.t"width") %><br />
     <%= f.number_field :width %>
   </div>
   <div class="field">
-    <%= f.label :height %><br />
+    <%= f.label :height, (I18n.t"height") %><br />
     <%= f.number_field :height %>
   </div>
   <div class="field">
-    <%= f.label :dish_id %><br />
+    <%= f.label :dish_id, (I18n.t"dish_id") %><br />
     <%= f.number_field :dish_id %>
   </div>
   <div class="field">
-    <%= f.label :page_id %><br />
+    <%= f.label :page_id, (I18n.t"page_id") %><br />
     <%= f.number_field :page_id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit(I18n.t"create_display_item") %>
   </div>
 <% end %>

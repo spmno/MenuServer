@@ -35,6 +35,7 @@ class PagesController < ApplicationController
   # GET /pages/1/edit
   def edit
     @page_id = params[:id]
+    @display_items = DisplayItem.find_all_by_page_id(@page_id)
     @page = Page.find(params[:id])
   end
 
@@ -102,5 +103,9 @@ class PagesController < ApplicationController
     respond_to do |format|
       format.js
     end
+  end
+
+  def update_app
+    @pages = Page.all
   end
 end
