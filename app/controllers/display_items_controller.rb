@@ -43,9 +43,10 @@
   # POST /display_items.json
   def create
     @display_item = DisplayItem.new(params[:display_item])
-
+    @page_version = PageVersion.new
+    @page_version.name = "Display item create"
     respond_to do |format|
-      if @display_item.save
+      if @display_item.save && @page_version.save
         #format.html { redirect_to @display_item, notice: 'Display item was successfully created.' }
         #format.json { render json: @display_item, status: :created, location: @display_item }
         format.html { redirect_to edit_page_path(@display_item.page_id)}

@@ -34,10 +34,10 @@
   <div class="field">
     <!--
     <%= f.label :kind_id, (I18n.t"kind") %><br />
-    <%= f.number_field :kind_id %>
+    <%= f.number_field :dish_kind_id %>
     -->
     <%= f.label :kind_id, (I18n.t"kind") %><br />
-    <%= f.select :kind_id, options_from_collection_for_select(DishKind.all, 'id', 'name'), {prompt:"选择种类"} %>
+    <%= f.select :dish_kind_id, options_from_collection_for_select(DishKind.all, 'id', 'name'), {prompt:"选择种类"} %>
   </div>
   <div class="actions">
     <%= f.submit(I18n.t"create_dish") %>

@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b><%= I18n.t"name" %></b>
   <%= @page.name %>
 </p>
 
 <p>
-  <b>Photo:</b>
-  <%= @page.photo %>
+  <b><%= I18n.t"image"%></b>
+  <%= image_tag @page.photo %>
 </p>
 
 
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<%= link_to (I18n.t"edit"), edit_page_path(@page) %> |
+<%= link_to (I18n.t"back"), pages_path %>

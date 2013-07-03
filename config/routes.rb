@@ -1,4 +1,10 @@
 MenuServer::Application.routes.draw do
+  resources :page_versions do
+    collection do
+      get 'last_version'
+    end
+  end
+
   resources :display_items do
     collection do
       post 'save_select_dish'

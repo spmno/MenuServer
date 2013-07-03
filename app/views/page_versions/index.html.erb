@@ -1,0 +1,23 @@
+<h1>Listing page_versions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @page_versions.each do |page_version| %>
+  <tr>
+    <td><%= page_version.name %></td>
+    <td><%= link_to 'Show', page_version %></td>
+    <td><%= link_to 'Edit', edit_page_version_path(page_version) %></td>
+    <td><%= link_to 'Destroy', page_version, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Page version', new_page_version_path %>
