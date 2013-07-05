@@ -16,6 +16,7 @@ zh:
   dish_kind: "菜品种类"
   new_dish_kind: "新菜品种类"
   create_dish_kind: "创建种类"
+  edit_dish_kind: "编辑种类"
   list_pages: "页面列表"
   new_page: "新页面"
   create_page: "创建页面"

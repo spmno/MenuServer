@@ -108,5 +108,6 @@ class PagesController < ApplicationController
 
   def update_app
     @pages = Page.all
+    @dish_kinds = DishKind.all
   end
 end

@@ -6,3 +6,8 @@ json.pages @pages do |json, page|
      json.display_item item
   end
 end
+
+json.kinds @dish_kinds do |json, kind|
+    json.name kind.name
+    json.photo kind.photo
+end
