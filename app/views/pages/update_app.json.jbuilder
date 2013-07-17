@@ -9,6 +9,7 @@ json.pages @pages do |json, page|
 end
 
 json.kinds @dish_kinds do |json, kind|
-    json.name kind.name
-    json.photo kind.photo
+  json.id kind.id
+  json.name kind.name
+  json.photo kind.photo
 end
