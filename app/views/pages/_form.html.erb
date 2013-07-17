@@ -27,6 +27,9 @@
     <lable><%= I18n.t"image" %></lable>
     <%= f.file_field :photo %>
   </div>
+    <%= f.label :kind_id, (I18n.t"kind") %><br />
+    <%= f.select :dish_kind_id, options_from_collection_for_select(DishKind.all, 'id', 'name'), {prompt:"选择种类"} %>
+
     <!--
     <div class="display_items">
       <label>子项</label>
