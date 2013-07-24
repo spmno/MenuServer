@@ -13,3 +13,10 @@ json.kinds @dish_kinds do |json, kind|
   json.name kind.name
   json.photo kind.photo
 end
+
+json.dishes @dishes do |json, dish|
+  json.id dish.id
+  json.name dish.name
+  json.description dish.description
+  json.price dish.price
+end
