@@ -22,7 +22,11 @@ MenuServer::Application.routes.draw do
 
   resources :order_items
 
-  resources :members
+  resources :members do
+    collection do
+      post 'submit'
+    end
+  end
 
   resources :orders
 

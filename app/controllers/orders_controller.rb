@@ -80,4 +80,9 @@ class OrdersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # receive the app order
+  def submit
+    order_param = params[:order]
+  end
 end
