@@ -41,9 +41,10 @@ class DishKindsController < ApplicationController
   # POST /dish_kinds.json
   def create
     @dish_kind = DishKind.new(params[:dish_kind])
-
+    @page_version = PageVersion.new
+    @page_version.name = "Create Kind"
     respond_to do |format|
-      if @dish_kind.save
+      if @dish_kind.save && @page_version.save
         format.html { redirect_to @dish_kind, notice: 'Dish kind was successfully created.' }
         format.json { render json: @dish_kind, status: :created, location: @dish_kind }
       else
