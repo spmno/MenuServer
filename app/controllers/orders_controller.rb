@@ -84,5 +84,6 @@ class OrdersController < ApplicationController
   # receive the app order
   def submit
     order_param = params[:order]
+    print order_param
   end
 end
