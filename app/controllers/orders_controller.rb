@@ -85,5 +85,19 @@ class OrdersController < ApplicationController
   def submit
     order_param = params[:order]
     print order_param
+    current_order = Order.new
+    if current_order.save
+      order_param.each do |order|
+        order_item = OrderItem.new
+        order_item.order_id = current_order.id
+        order_item.dish_id = order['dishid']
+        order_item.count = order['dishcount']
+        if order_item.save
+          print 'save order item success'
+        else
+          print 'save order item failed'
+        end
+      end
+    end
   end
 end
