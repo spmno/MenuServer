@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :order_id %><br />
+    <%= f.label :order_id, (I18n.t"order_id") %><br />
     <%= f.number_field :order_id %>
   </div>
   <div class="field">
-    <%= f.label :dish_id %><br />
+    <%= f.label :dish_id, (I18n.t"dish_id") %><br />
     <%= f.number_field :dish_id %>
   </div>
   <div class="field">
-    <%= f.label :discount %><br />
+    <%= f.label :discount, (I18n.t"discount") %><br />
     <%= f.number_field :discount %>
   </div>
   <div class="field">
-    <%= f.label :count %><br />
+    <%= f.label :count, (I18n.t"count") %><br />
     <%= f.number_field :count %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit(I18n.t"new_order_item") %>
   </div>
 <% end %>
