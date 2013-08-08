@@ -1,3 +1,3 @@
 class OrderItem < ActiveRecord::Base
-  has_one :dish
+  belongs_to :dish
 end
