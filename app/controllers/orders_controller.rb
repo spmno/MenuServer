@@ -99,6 +99,7 @@ class OrdersController < ApplicationController
         order_item.count = order['dishcount']
         if order_item.save
           print 'save order item success'
+          render :json => "success"
         else
           print 'save order item failed'
         end
