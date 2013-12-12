@@ -1,10 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b><%= I18n.t"name" %>:</b>
   <%= @dish_kind.name %>
+  <b><%= I18n.t"image"%></b>
+  <%= image_tag @dish_kind.photo %>
 </p>
 
 
-<%= link_to 'Edit', edit_dish_kind_path(@dish_kind) %> |
-<%= link_to 'Back', dish_kinds_path %>
+<%= link_to (I18n.t"edit"), edit_dish_kind_path(@dish_kind) %> |
+<%= link_to (I18n.t"back"), dish_kinds_path %>

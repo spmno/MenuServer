@@ -11,10 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
+    <div class="field">
     <%= f.label :name, (I18n.t"name") %><br />
     <%= f.text_field :name %>
-  </div>
+    </div>
+    <div class="field">
+      <lable><%= I18n.t"image" %></lable>
+      <%= f.file_field :photo %>
+    </div>
   <div class="actions">
     <%= f.submit(I18n.t"create_dish_kind") %>
   </div>

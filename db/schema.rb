@@ -11,12 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130626081636) do
+ActiveRecord::Schema.define(:version => 20130717134006) do
 
   create_table "dish_kinds", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "photo"
   end
 
   create_table "dishes", :force => true do |t|
@@ -68,11 +69,18 @@ ActiveRecord::Schema.define(:version => 20130626081636) do
     t.datetime "updated_at",    :null => false
   end
 
+  create_table "page_versions", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.string   "photo"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "dish_kind_id"
   end
 
 end

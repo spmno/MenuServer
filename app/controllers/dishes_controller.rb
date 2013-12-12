@@ -41,9 +41,10 @@ class DishesController < ApplicationController
   # POST /dishes.json
   def create
     @dish = Dish.new(params[:dish])
-
+    @page_version = PageVersion.new
+    @page_version.name = "Create Dish"
     respond_to do |format|
-      if @dish.save
+      if @dish.save && @page_version.save
         format.html { redirect_to @dish, notice: 'Dish was successfully created.' }
         format.json { render json: @dish, status: :created, location: @dish }
       else

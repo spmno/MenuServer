@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :total_price %><br />
+    <%= f.label :total_price, (I18n.t"total_price") %><br />
     <%= f.text_field :total_price %>
   </div>
   <div class="field">
-    <%= f.label :order_time %><br />
+    <%= f.label :order_time, (I18n.t"order_time") %><br />
     <%= f.datetime_select :order_time %>
   </div>
   <div class="field">
-    <%= f.label :checkout_time %><br />
+    <%= f.label :checkout_time, (I18n.t"checkout_time") %><br />
     <%= f.datetime_select :checkout_time %>
   </div>
   <div class="field">
-    <%= f.label :member_id %><br />
+    <%= f.label :member_id, (I18n.t"member") %><br />
     <%= f.number_field :member_id %>
   </div>
   <div class="field">
-    <%= f.label :table_id %><br />
+    <%= f.label :table_id, (I18n.t"sit_table") %><br />
     <%= f.number_field :table_id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit(I18n.t"create_order") %>
   </div>
 <% end %>

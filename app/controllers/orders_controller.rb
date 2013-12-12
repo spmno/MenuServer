@@ -14,7 +14,7 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @order = Order.find(params[:id])
-
+    @order_items = @order.order_items
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @order }
@@ -78,6 +78,32 @@ class OrdersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to orders_url }
       format.json { head :no_content }
+    end
+  end
+
+  # receive the app order
+  def submit
+    order_param = params[:order]
+    table_number = params[:tableno]
+    member_number = params[:memberno]
+    print order_param
+    current_order = Order.new
+    current_order.member_id = member_number
+    current_order.table_id = table_number
+    current_order.order_time = Time.now
+    if current_order.save
+      order_param.each do |order|
+        order_item = OrderItem.new
+        order_item.order_id = current_order.id
+        order_item.dish_id = order['dishid']
+        order_item.count = order['dishcount']
+        if order_item.save
+          print 'save order item success'
+          render :json => "success"
+        else
+          print 'save order item failed'
+        end
+      end
     end
   end
 end

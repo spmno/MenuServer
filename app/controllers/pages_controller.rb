@@ -43,9 +43,10 @@ class PagesController < ApplicationController
   # POST /pages.json
   def create
     @page = Page.new(params[:page])
-
+    @page_version = PageVersion.new
+    @page_version.name = "Create Page"
     respond_to do |format|
-      if @page.save
+      if @page.save && @page_version.save
         format.html { redirect_to @page, notice: 'Page was successfully created.' }
         format.json { render json: @page, status: :created, location: @page }
       else
@@ -107,5 +108,7 @@ class PagesController < ApplicationController
 
   def update_app
     @pages = Page.all
+    @dish_kinds = DishKind.all
+    @dishes = Dish.all
   end
 end

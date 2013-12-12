@@ -1,30 +1,45 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Total price:</b>
-  <%= @order.total_price %>
+<table>
+  <tr>
+    <% @order_items.each do |order_item| %>
+        <td><%= order_item.dish.name %></td>
+        <td><%= order_item.count %></td>
+        <td><%= order_item.dish.price %></td>
+        <td><%= order_item.discount %></td>
+    <% end %>
+  </tr>
+
+</table>
 </p>
 
+
+
 <p>
-  <b>Order time:</b>
+  <b><%= I18n.t"order_time" %>:</b>
   <%= @order.order_time %>
 </p>
 
 <p>
-  <b>Checkout time:</b>
+  <b><%= I18n.t"checkout_time" %>:</b>
   <%= @order.checkout_time %>
 </p>
 
 <p>
-  <b>Member:</b>
+  <b><%= I18n.t"member" %>:</b>
   <%= @order.member_id %>
 </p>
 
 <p>
-  <b>Table:</b>
+  <b><%= I18n.t"sit_table" %>:</b>
   <%= @order.table_id %>
 </p>
 
+<p>
+  <b><%= I18n.t"total_price" %>:</b>
+  <%= @order.total_price %>
+</p>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<%= link_to (I18n.t"edit"), edit_order_path(@order) %> |
+<%= link_to (I18n.t"back"), orders_path %>
