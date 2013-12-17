@@ -35,6 +35,8 @@ end
 
 gem 'carrierwave'
 
+gem 'bootstrap-sass'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
