@@ -1,5 +1,69 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  title: "Menu Server"
+  server_name: "Menu Server"
+  id: "Id"
+  name: "Name"
+  description: "Description"
+  image: "Image"
+  price: "Price"
+  kind: "Kind"
+  new_dish: "New Dish"
+  show: "Show"
+  edit: "Edit"
+  delete: "Delete"
+  list_dishes: "Dish List"
+  back: "Back"
+  create_dish: "Create Dish"
+  dish_kind: "Dish Kind"
+  new_dish_kind: "New Dish Kind"
+  create_dish_kind: "Create Dish Kind"
+  edit_dish_kind: "Edit Dish Kind"
+  list_pages: "Page List"
+  new_page: "New Page"
+  create_page: "Create Page"
+  edit_page: "Edit Page"
+  add_sub_item: "Add SubItem"
+  items: "Items"
+  select_dish: "Selete Dish"
+  new_display_item: "New Display Item"
+  width: "Width"
+  height: "Height"
+  dish: "Dish"
+  dish_id: "Dish Id"
+  page_id: "Page Id"
+  create_display_item: "Create Display Item"
+  list_orders: "Order List"
+  total_price: "Total Price"
+  order_time: "Order Time"
+  checkout_time: "Checkout Time"
+  member: "Member"
+  sit_table: "Table"
+  create_order: "Create Order"
+  edit_order: "Edit Order"
+  new_order: "New Order"
+  order_id: "Order Id"
+  discount: "Discount"
+  count: "Count"
+  new_order_item: "New Order Item"
+  list_order_items: "List Order Item"
+  order: "Order"
