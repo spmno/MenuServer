@@ -40,6 +40,7 @@ class DishKindsController < ApplicationController
   # POST /dish_kinds
   # POST /dish_kinds.json
   def create
+    params.permit!
     @dish_kind = DishKind.new(params[:dish_kind])
     @page_version = PageVersion.new
     @page_version.name = "Create Kind"
