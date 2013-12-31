@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a93213c-1f8a-4870-8914-9df913ed6f72" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dishes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dishes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dishes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/dishes/index.html.erb" />
     </list>
     <ignored path="MenuServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,28 +32,14 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="47" selection-start="773" selection-end="773" vertical-scroll-proportion="-8.714286" vertical-offset="326" max-vertical-offset="703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/display_items/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="89" selection-start="827" selection-end="827" vertical-scroll-proportion="-9.5" vertical-offset="342" max-vertical-offset="741">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/members/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="42" selection-start="563" selection-end="563" vertical-scroll-proportion="-7.928571" vertical-offset="272" max-vertical-offset="627">
-              <folding />
+              <folding>
+                <marker date="1388488276289" expanded="true" signature="32:510" placeholder="..." />
+                <marker date="1388488276289" expanded="true" signature="39:147" placeholder="..." />
+                <marker date="1388488276289" expanded="true" signature="187:491" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +48,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/order_items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="93" selection-start="810" selection-end="810" vertical-scroll-proportion="-7.928571" vertical-offset="310" max-vertical-offset="665">
-              <folding />
+              <folding>
+                <marker date="1388488286384" expanded="true" signature="48:706" placeholder="..." />
+                <marker date="1388488286384" expanded="true" signature="55:243" placeholder="..." />
+                <marker date="1388488286384" expanded="true" signature="291:687" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +61,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/orders/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="86" selection-start="854" selection-end="854" vertical-scroll-proportion="-8.142858" vertical-offset="342" max-vertical-offset="703">
-              <folding />
+              <folding>
+                <marker date="1388488295925" expanded="true" signature="43:757" placeholder="..." />
+                <marker date="1388488295925" expanded="true" signature="50:294" placeholder="..." />
+                <marker date="1388488295925" expanded="true" signature="332:738" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,7 +74,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/page_versions/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="89" selection-start="547" selection-end="547" vertical-scroll-proportion="-7.928571" vertical-offset="196" max-vertical-offset="551">
-              <folding />
+              <folding>
+                <marker date="1388488304960" expanded="true" signature="38:447" placeholder="..." />
+                <marker date="1388488304960" expanded="true" signature="45:113" placeholder="..." />
+                <marker date="1388488304960" expanded="true" signature="165:428" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +87,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="627">
-              <folding />
+              <folding>
+                <marker date="1388488315588" expanded="true" signature="44:585" placeholder="..." />
+                <marker date="1388488315588" expanded="true" signature="51:207" placeholder="..." />
+                <marker date="1388488315588" expanded="true" signature="243:566" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,10 +114,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dishes_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dish_kinds/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="4" selection-start="324" selection-end="346" vertical-scroll-proportion="-2.7142856" vertical-offset="171" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="0.16056338" vertical-offset="0" max-vertical-offset="665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dishes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/dishes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="38" selection-start="895" selection-end="895" vertical-scroll-proportion="-0.29765013" vertical-offset="969" max-vertical-offset="1900">
+            <state line="59" column="12" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="1900">
               <folding />
             </state>
           </provider>
@@ -169,7 +189,6 @@
         <option value="$PROJECT_DIR$/app/controllers/dish_kinds_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/dish_kinds/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/dishes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/display_items/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/members/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/order_items/index.html.erb" />
@@ -177,6 +196,7 @@
         <option value="$PROJECT_DIR$/app/views/page_versions/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/dishes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/dishes/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1166,20 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dish_kinds/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="93" selection-start="819" selection-end="854" vertical-scroll-proportion="-9.392858" vertical-offset="212" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="47" selection-start="773" selection-end="773" vertical-scroll-proportion="-8.714286" vertical-offset="326" max-vertical-offset="703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/display_items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="89" selection-start="827" selection-end="827" vertical-scroll-proportion="-9.5" vertical-offset="342" max-vertical-offset="741">
@@ -1190,35 +1196,55 @@
     <entry file="file://$PROJECT_DIR$/app/views/members/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="42" selection-start="563" selection-end="563" vertical-scroll-proportion="-7.928571" vertical-offset="272" max-vertical-offset="627">
-          <folding />
+          <folding>
+            <marker date="1388488276289" expanded="true" signature="32:510" placeholder="..." />
+            <marker date="1388488276289" expanded="true" signature="39:147" placeholder="..." />
+            <marker date="1388488276289" expanded="true" signature="187:491" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/order_items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="93" selection-start="810" selection-end="810" vertical-scroll-proportion="-7.928571" vertical-offset="310" max-vertical-offset="665">
-          <folding />
+          <folding>
+            <marker date="1388488286384" expanded="true" signature="48:706" placeholder="..." />
+            <marker date="1388488286384" expanded="true" signature="55:243" placeholder="..." />
+            <marker date="1388488286384" expanded="true" signature="291:687" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/orders/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="86" selection-start="854" selection-end="854" vertical-scroll-proportion="-8.142858" vertical-offset="342" max-vertical-offset="703">
-          <folding />
+          <folding>
+            <marker date="1388488295925" expanded="true" signature="43:757" placeholder="..." />
+            <marker date="1388488295925" expanded="true" signature="50:294" placeholder="..." />
+            <marker date="1388488295925" expanded="true" signature="332:738" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/page_versions/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="89" selection-start="547" selection-end="547" vertical-scroll-proportion="-7.928571" vertical-offset="196" max-vertical-offset="551">
-          <folding />
+          <folding>
+            <marker date="1388488304960" expanded="true" signature="38:447" placeholder="..." />
+            <marker date="1388488304960" expanded="true" signature="45:113" placeholder="..." />
+            <marker date="1388488304960" expanded="true" signature="165:428" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="627">
-          <folding />
+          <folding>
+            <marker date="1388488315588" expanded="true" signature="44:585" placeholder="..." />
+            <marker date="1388488315588" expanded="true" signature="51:207" placeholder="..." />
+            <marker date="1388488315588" expanded="true" signature="243:566" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,7 +1264,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/dishes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="38" selection-start="895" selection-end="895" vertical-scroll-proportion="-0.29765013" vertical-offset="969" max-vertical-offset="1900">
+        <state line="59" column="12" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="1900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dish_kinds/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="324" selection-end="346" vertical-scroll-proportion="-2.7142856" vertical-offset="171" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="0.16056338" vertical-offset="0" max-vertical-offset="665">
           <folding />
         </state>
       </provider>

@@ -1,30 +1,28 @@
 <h1><%= I18n.t"list_dishes" %></h1>
 
-<table>
-  <tr>
-    <th><%= I18n.t"name" %></th>
-    <th><%= I18n.t"description" %></th>
-    <th><%= I18n.t"image" %></th>
-    <th><%= I18n.t"price" %></th>
-    <th><%= I18n.t"kind" %></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="row">
+  <div class="col-md-2"><%= I18n.t"name" %></div>
+  <div class="col-md-2"><%= I18n.t"description" %></div>
+  <div class="col-md-3"><%= I18n.t"image" %></div>
+  <div class="col-md-1"><%= I18n.t"price" %></div>
+  <div class="col-md-1"><%= I18n.t"kind" %></div>
+  <div class="col-md-1">""</div>
+  <div class="col-md-1">""</div>
+  <div class="col-md-1">""</div>
+</div>
 
 <% @dishes.each do |dish| %>
-  <tr>
-    <td><%= dish.name %></td>
-    <td><%= dish.description %></td>
-    <td><%= dish.photo %></td>
-    <td><%= dish.price %></td>
-    <td><%= dish.dish_kind.name %></td>
-    <td><%= link_to (I18n.t"show"), dish %></td>
-    <td><%= link_to (I18n.t"edit"), edit_dish_path(dish) %></td>
-    <td><%= link_to (I18n.t"delete"), dish, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <div class="row">
+    <div class="col-md-2"><%= dish.name %></div>
+    <div class="col-md-2"><%= dish.description %></div>
+    <div class="col-md-3"><%= dish.photo %></div>
+    <div class="col-md-1"><%= dish.price %></div>
+    <div class="col-md-1"><%= dish.dish_kind.name %></div>
+    <div class="col-md-1"><%= link_to (I18n.t"show"), dish %></div>
+    <div class="col-md-1"><%= link_to (I18n.t"edit"), edit_dish_path(dish) %></div>
+    <div class="col-md-1"><%= link_to (I18n.t"delete"), dish, confirm: 'Are you sure?', method: :delete %></div>
+  </div>
 <% end %>
-</table>
 
 <br />
 
