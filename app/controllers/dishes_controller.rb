@@ -40,6 +40,7 @@ class DishesController < ApplicationController
   # POST /dishes
   # POST /dishes.json
   def create
+    params.permit!
     @dish = Dish.new(params[:dish])
     @page_version = PageVersion.new
     @page_version.name = "Create Dish"
