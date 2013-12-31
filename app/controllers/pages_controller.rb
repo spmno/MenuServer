@@ -42,6 +42,7 @@ class PagesController < ApplicationController
   # POST /pages
   # POST /pages.json
   def create
+    params.permit!
     @page = Page.new(params[:page])
     @page_version = PageVersion.new
     @page_version.name = "Create Page"
@@ -59,6 +60,7 @@ class PagesController < ApplicationController
   # PUT /pages/1
   # PUT /pages/1.json
   def update
+    params.permit!
     @page = Page.find(params[:id])
 
     respond_to do |format|

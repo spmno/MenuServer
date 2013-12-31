@@ -1,26 +1,24 @@
 <h1><%= I18n.t("list_pages") %></h1>
 
-<table>
-  <tr>
-    <th><%= I18n.t("name") %></th>
-    <th><%= I18n.t("image") %></th>
-    <th><%= I18n.t("kind") %></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="row">
+  <div class="col-md-2"><%= I18n.t"name" %></div>
+  <div class="col-md-4"><%= I18n.t"image" %></div>
+  <div class="col-md-1"><%= I18n.t"kind" %></div>
+  <div class="col-md-1">""</div>
+  <div class="col-md-1">""</div>
+  <div class="col-md-1">""</div>
+</div>
 
 <% @pages.each do |page| %>
-  <tr>
-    <td><%= page.name %></td>
-    <td><%= page.photo %></td>
-    <td><%= page.dish_kind.name %></td>
-    <td><%= link_to (I18n.t("show")), page %></td>
-    <td><%= link_to (I18n.t("edit")), edit_page_path(page) %></td>
-    <td><%= link_to (I18n.t("delete")), page, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <div class="row">
+    <div class="col-md-2"><%= page.name %></div>
+    <div class="col-md-4"><%= page.photo %></div>
+    <div class="col-md-1"><%= page.dish_kind.name %></div>
+    <div class="col-md-1"><%= link_to (I18n.t("show")), page %></div>
+    <div class="col-md-1"><%= link_to (I18n.t("edit")), edit_page_path(page) %></div>
+    <div class="col-md-1"><%= link_to (I18n.t("delete")), page, confirm: 'Are you sure?', method: :delete %></div>
+  </div>
 <% end %>
-</table>
 
 <br />
 

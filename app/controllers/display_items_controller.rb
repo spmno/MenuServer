@@ -42,6 +42,7 @@
   # POST /display_items
   # POST /display_items.json
   def create
+    params.permit!
     @display_item = DisplayItem.new(params[:display_item])
     @page_version = PageVersion.new
     @page_version.name = "Display item create"
@@ -60,6 +61,7 @@
   # PUT /display_items/1
   # PUT /display_items/1.json
   def update
+    params.permit!
     @display_item = DisplayItem.find(params[:id])
 
     respond_to do |format|

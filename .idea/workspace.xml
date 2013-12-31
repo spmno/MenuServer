@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a93213c-1f8a-4870-8914-9df913ed6f72" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dishes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/dishes/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MenuServer.iml" afterPath="$PROJECT_DIR$/.idea/MenuServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/display_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/display_items_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
     </list>
     <ignored path="MenuServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MenuServer@rails_update__MenuServer.coverage" NAME="rails:update: MenuServer Coverage Results" MODIFIED="1387419426057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MenuServer" />
-    <SUITE FILE_PATH="coverage/MenuServer@Development__MenuServer.coverage" NAME="Development: MenuServer Coverage Results" MODIFIED="1388486969001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MenuServer" />
+    <SUITE FILE_PATH="coverage/MenuServer@Development__MenuServer.coverage" NAME="Development: MenuServer Coverage Results" MODIFIED="1388496095224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MenuServer" />
     <SUITE FILE_PATH="coverage/MenuServer@db_migrate__MenuServer.coverage" NAME="db:migrate: MenuServer Coverage Results" MODIFIED="1387419718171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MenuServer" />
     <SUITE FILE_PATH="coverage/MenuServer@Rails_console__MenuServer.coverage" NAME="Rails console: MenuServer Coverage Results" MODIFIED="1388486941046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MenuServer" />
   </component>
@@ -31,32 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/members/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="42" selection-start="563" selection-end="563" vertical-scroll-proportion="-7.928571" vertical-offset="272" max-vertical-offset="627">
-              <folding>
-                <marker date="1388488276289" expanded="true" signature="32:510" placeholder="..." />
-                <marker date="1388488276289" expanded="true" signature="39:147" placeholder="..." />
-                <marker date="1388488276289" expanded="true" signature="187:491" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/order_items/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="93" selection-start="810" selection-end="810" vertical-scroll-proportion="-7.928571" vertical-offset="310" max-vertical-offset="665">
-              <folding>
-                <marker date="1388488286384" expanded="true" signature="48:706" placeholder="..." />
-                <marker date="1388488286384" expanded="true" signature="55:243" placeholder="..." />
-                <marker date="1388488286384" expanded="true" signature="291:687" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/orders/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,12 +63,26 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="627">
-              <folding>
-                <marker date="1388488315588" expanded="true" signature="44:585" placeholder="..." />
-                <marker date="1388488315588" expanded="true" signature="51:207" placeholder="..." />
-                <marker date="1388488315588" expanded="true" signature="243:566" placeholder="..." />
-              </folding>
+            <state line="18" column="26" selection-start="702" selection-end="702" vertical-scroll-proportion="-10.178572" vertical-offset="57" max-vertical-offset="589">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display_items_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/display_items_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="18" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-0.5950617" vertical-offset="1438" max-vertical-offset="2014">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/page.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,16 +108,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dish_kinds/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="324" selection-end="346" vertical-scroll-proportion="-2.7142856" vertical-offset="171" max-vertical-offset="646">
+            <state line="3" column="0" selection-start="36" selection-end="260" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="0.16056338" vertical-offset="0" max-vertical-offset="665">
+            <state line="3" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="9.035714" vertical-offset="310" max-vertical-offset="665">
               <folding />
             </state>
           </provider>
@@ -172,9 +163,7 @@
         <option value="$PROJECT_DIR$/app/views/display_items/new.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/zh.yml" />
         <option value="$PROJECT_DIR$/app/views/display_items/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/display_items_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/update_app.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/page.rb" />
         <option value="$PROJECT_DIR$/app/models/dish_kind.rb" />
@@ -194,9 +183,11 @@
         <option value="$PROJECT_DIR$/app/views/order_items/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/orders/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/page_versions/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/dishes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dishes/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/display_items_controller.rb" />
       </list>
     </option>
   </component>
@@ -604,8 +595,28 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: MenuServer">
+    <configuration default="false" name="Rails console: MenuServer" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="MenuServer" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/script/rails" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="MenuServer" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -694,25 +705,6 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Rails console: MenuServer" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="MenuServer" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/script/rails" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -852,15 +844,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: MenuServer" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: MenuServer" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate: MenuServer" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.rails:update: MenuServer" />
-      <item index="8" class="java.lang.String" itemvalue="IRB console.Rails console: MenuServer" />
+      <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: MenuServer" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Production: MenuServer" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Development: MenuServer" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate: MenuServer" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.rails:update: MenuServer" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -911,7 +903,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30955994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3110774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3110774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1017,11 +1009,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="10" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.75042737" vertical-offset="1613" max-vertical-offset="2223" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/display_items/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="24" selection-start="88" selection-end="88" vertical-scroll-proportion="0.13644524" vertical-offset="0" max-vertical-offset="557" />
@@ -1030,11 +1017,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/pages/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="13" selection-start="981" selection-end="981" vertical-scroll-proportion="0.38687393" vertical-offset="422" max-vertical-offset="1026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/display_items_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="3" selection-start="2558" selection-end="2558" vertical-scroll-proportion="0.8220758" vertical-offset="1325" max-vertical-offset="1957" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/display_items/_form.html.erb">
@@ -1153,13 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.04691358" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/dish_kinds_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="18" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1729">
@@ -1197,9 +1172,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="42" selection-start="563" selection-end="563" vertical-scroll-proportion="-7.928571" vertical-offset="272" max-vertical-offset="627">
           <folding>
-            <marker date="1388488276289" expanded="true" signature="32:510" placeholder="..." />
-            <marker date="1388488276289" expanded="true" signature="39:147" placeholder="..." />
-            <marker date="1388488276289" expanded="true" signature="187:491" placeholder="..." />
+            <marker date="1388488276289" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388488276289" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388488276289" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1208,9 +1183,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="93" selection-start="810" selection-end="810" vertical-scroll-proportion="-7.928571" vertical-offset="310" max-vertical-offset="665">
           <folding>
-            <marker date="1388488286384" expanded="true" signature="48:706" placeholder="..." />
-            <marker date="1388488286384" expanded="true" signature="55:243" placeholder="..." />
-            <marker date="1388488286384" expanded="true" signature="291:687" placeholder="..." />
+            <marker date="1388488286384" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388488286384" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388488286384" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1237,17 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="627">
-          <folding>
-            <marker date="1388488315588" expanded="true" signature="44:585" placeholder="..." />
-            <marker date="1388488315588" expanded="true" signature="51:207" placeholder="..." />
-            <marker date="1388488315588" expanded="true" signature="243:566" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/dish_kind.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
@@ -1269,16 +1233,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dish_kinds/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="324" selection-end="346" vertical-scroll-proportion="-2.7142856" vertical-offset="171" max-vertical-offset="646">
+        <state line="3" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="9.035714" vertical-offset="310" max-vertical-offset="665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dishes/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/dish_kinds/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="0.16056338" vertical-offset="0" max-vertical-offset="665">
+        <state line="3" column="0" selection-start="36" selection-end="260" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="18" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="2318">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="702" selection-end="702" vertical-scroll-proportion="-10.178572" vertical-offset="57" max-vertical-offset="589">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/display_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="18" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-0.5950617" vertical-offset="1438" max-vertical-offset="2014">
           <folding />
         </state>
       </provider>
